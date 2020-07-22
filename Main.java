@@ -1,5 +1,3 @@
-//empaquetar .class
-package clases;
 // importar los paquetes necesarios
 import java.util.Scanner;
 import clases.Moneda;
@@ -10,10 +8,10 @@ public class Main{
 		int captura = 0;
 		Alcancia pork = new Alcancia();
 		System.out.println("Bienvenido a la alcancia pork");
-		System.out.println("Este es el menú de opciones:");
+		System.out.println("Este es el menÃº de opciones:");
 		do{
 			System.out.println("1) Insertar Monedas. \n2) Conocer saldos y cantidades de las Monedas insertadas.\n3) Romper la alcancia.\n4) Salir");
-			System.out.println("Escoga una opción. ¿Que desea hacer.?");
+			System.out.println("Escoga una opciÃ³n. Â¿Que desea hacer.?");
 			try{
 				Scanner in = new Scanner(System.in);
 				captura = in.nextInt();	
@@ -23,13 +21,13 @@ public class Main{
 				switch(captura){
 					case 1: 
 							do{
-								menu = "Elige una opción \n1)Insertar moneda\n2)Regresa al menú anterior";
+								menu = "Elige una opciÃ³n \n1)Insertar moneda\n2)Regresa al menÃº anterior";
 								System.out.println(menu);
 								captura2 = in.nextInt();
 								int captura3=0;
 								switch(captura2){
 									case 1: do{
-												menu = "Escoge una denominación:\n1)50\n2)100\n3)200\n4)500\n5)1000\n6)Regresar al menú anterior"; 
+												menu = "Escoge una denominaciÃ³n:\n1)50\n2)100\n3)200\n4)500\n5)1000\n6)Regresar al menÃº anterior"; 
 												System.out.println(menu);
 												captura3 = in.nextInt();
 												switch(captura3){
@@ -77,14 +75,14 @@ public class Main{
 							break;
 					case 2: 
 							do{
-								menu = "¿Que quieres saber?\n1)Cantidad de Monedas de una denominación\n2)Valor Total de una denominación\n3)Cantidad Total de Monedas\n4)Valor total en mi alcancia\n5)Regresa al menú anterior";
+								menu = "Â¿Que quieres saber?\n1)Cantidad de Monedas de una denominaciÃ³n\n2)Valor Total de una denominaciÃ³n\n3)Cantidad Total de Monedas\n4)Valor total en mi alcancia\n5)Regresa al menÃº anterior";
 								System.out.println(menu);
 								captura2 = in.nextInt();
 								int captura3 = 0;
 								switch(captura2){
 									case 1:
 											do{
-												menu = "Escoge una denominación:\n1)50\n2)100\n3)200\n4)500\n5)1000\n6)Regresar al menú anterior";
+												menu = "Escoge una denominaciÃ³n:\n1)50\n2)100\n3)200\n4)500\n5)1000\n6)Regresar al menÃº anterior";
 												System.out.println(menu);
 												captura3 = in.nextInt();
 												int denominacion =0;	
@@ -109,7 +107,7 @@ public class Main{
 											}while(captura3 > 0 && captura3 < 6);
 											break;
 									case 2: do{
-												menu = "Escoge una denominación:\n1)50\n2)100\n3)200\n4)500\n5)1000\n6)Regresar al menú anterior";
+												menu = "Escoge una denominaciÃ³n:\n1)50\n2)100\n3)200\n4)500\n5)1000\n6)Regresar al menÃº anterior";
 												System.out.println(menu);
 												captura3 = in.nextInt();
 												int denominacion =0;	
@@ -149,7 +147,7 @@ public class Main{
 					default:break;
 				}
 			}catch(Exception e){
-				System.out.println("Opción no valida, intente nuevamente ");
+				System.out.println("OpciÃ³n no valida, intente nuevamente ");
 				captura = 0;
 			} 	
 		}while(captura < 4);
